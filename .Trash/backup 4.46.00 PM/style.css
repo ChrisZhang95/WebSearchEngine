@@ -1,0 +1,244 @@
+h1{
+ color:#669999;
+    font: bold 40px/50px sans-serif;
+}
+div#pagetitle{
+    color:#99c2ff;
+    font-size: 4vw;
+}
+nav ul {
+    background: white;
+    font-size: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 99.9%;
+}
+nav li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    /*position: relative;*/
+    float: left;
+    min-width: 25%;
+}
+nav a {
+    background: #ff8533;
+    color: white;
+    display: block;
+    font: bold 16px/50px sans-serif;
+    font-size: 1.3vw;
+    /*padding: 0 20%;*/
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all .25s ease;
+       -moz-transition: all .25s ease;
+        -ms-transition: all .25s ease;
+         -o-transition: all .25s ease;
+            transition: all .25s ease;
+}
+nav .dropdown:after {
+    content: ' \25bc';
+}
+nav li:hover a {
+    background: #ffc299;
+    font-size: 1.5vw;
+}
+nav li ul {
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 35%;
+    visibility: hidden;
+    z-index: 1;
+    -webkit-transition: all .25s ease;
+       -moz-transition: all .25s ease;
+        -ms-transition: all .25s ease;
+         -o-transition: all .25s ease;
+            transition: all .25s ease;
+}
+nav li:hover ul {
+    opacity: 1;
+    top: 50px;
+    visibility: visible;
+}
+nav li ul li {
+    width: 100%;
+}
+nav li ul a:hover {
+    background: gray;
+}
+.cf {
+    min-width: 600px;
+}
+div{
+    border-radius: 15px;
+}
+div#col > div{
+    float: left;
+    width:25%;
+} 
+div#col > div > div {
+    border: #000 1px solid;
+    box-sizing:border-box;
+    padding:20px;
+}
+
+
+section{
+	display: inline-block;
+}
+
+#playground{
+	z-index: -3;
+	width: 75%;
+	height: 50em;
+    min-width:600px;
+	/*margin-left: 0;
+	margin-right: 2em;*/
+	margin-bottom: 2em;
+	background-color: white;
+	border-style: solid;
+	border-width: 2%;
+    border-width: 1.5px;
+	border-color: #66a3ff;
+    border-radius: 15px;
+    box-sizing:border-box;
+}
+.switch{
+    z-index: 2;
+    text-align: center;
+    color: white;
+    display: inline-block;
+}
+
+.switch p{
+    vertical-align: middle;
+    padding-top: 100%;
+}
+
+.button{
+    display: inline-block;
+}
+
+.item{
+    display: inline-block;
+}
+
+#monitor{
+    float: right;
+    z-index: -3;
+    width: 25%;
+    height: 50em;
+    min-width:200px;
+    margin-bottom: 2em;
+    background-color: #e6f0ff;
+    border-style: dashed;
+    border-width: 1.5px;
+    border-color: #99c2ff;
+    border-radius: 15px;
+    /*position: absolute;
+    right: 10px;*/
+    text-align: left;
+    box-sizing:border-box;
+}
+h2{
+    font: bold 30px/50px sans-serif;
+    text-align: center;
+}
+
+#monitor p{
+    /*position: relative;
+    left: 40px;*/
+     margin-left: 6vw;
+}
+#monitor > div {
+    font-size: 12;
+}
+#monitor > div > div {
+    border: #000 1px solid; 
+    border-color:  #e6f0ff;
+    padding:10px;
+    font-size: 1.5vw;
+}
+.dropdown + ul{
+    display: block  !important;
+}
+#content{
+    width:100%;
+    min-width:800px;}
+body{
+    min-width:800px;
+}
+.ml{
+    display:block;
+    height:100%;
+    float:left;
+}
+.mr{
+    display:block;
+    height:100%;
+    float:right;
+}
+.head{
+    height:100px;
+    width:100%;
+}
+.container{
+    background: #f6f6f6;
+    text-align: center;
+    color: #ff8533;
+}
+.context-menu{
+    width:auto;
+    height:auto;
+    box-shadow: 0 0 20px 0 #ccc;
+    position:absolute;
+    display: none;
+}
+.context-menu ul{
+    list-style: none;
+    padding: 5px 0px 5px 0px;
+}
+.context-menu ul li{
+    padding: 10px 5px 10px 5px;
+    border-left: 4px solid transparent;
+    cursor:pointer;
+}
+.menuItem{
+    width:100px;
+   /* padding-left:50px;
+    padding-right:50px;
+    padding-top: 15px;*/
+    font-family: Arial,Helvetica,sans-serif;
+    z-index: 4;
+}
+.menuItem:hover {
+    background-color: #cce6ff;
+    border-right:4px solid #666;
+}
+.showApps{
+    color: #ff8533;
+    width:100px;
+    height:auto;
+    box-shadow: 0 0 20px 0 #ccc;
+    position:absolute;
+    display: none;
+    z-index: 4;
+}
+.app-items{
+
+/*    padding-left:5px;
+    padding-right:5px;*/
+}
+.app-items:hover {
+    background-color: #cce6ff;
+/*    border-left:4px solid #666;
+*/}
+
+.ui-dialog {
+    z-index: 5;
+    position: relative;
+    background-color: #ff8533;
+}
